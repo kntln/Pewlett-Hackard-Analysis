@@ -28,7 +28,7 @@ Lastly, the following information needed to be extracted for this analysis:
 ![Snapshot3](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/retiring_titles.png)
     
 3. Mentorship Eligiblity Table
-    - There are 1,549 employees that are eligibile for mentorship as illustrade by the table below. 
+    - There are 1,549 employees that are eligibile for mentorship as illustrated by the table below. 
 ![Snapshot4](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/mentorship_eligibility.png)
 
 ## Summary
