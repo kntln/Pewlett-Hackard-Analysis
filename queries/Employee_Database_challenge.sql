@@ -69,12 +69,3 @@ SELECT ut.dept_name, ut.title, COUNT(ut.title)
 FROM (SELECT title, dept_name from unique_titles_dept) as ut
 GROUP BY ut.dept_name, ut.title
 ORDER BY ut.dept_name DESC;
-
-
--- Qualified staff, retirement-ready to mentor next generation.
-SELECT ut.dept_name, ut.title, COUNT(ut.title) 
---INTO qualified_staff
-FROM (SELECT title, dept_name from unique_titles_dept) as ut
-WHERE ut.title IN ('Senior Engineer', 'Senior Staff', 'Technique Leader', 'Manager')
-GROUP BY ut.dept_name, ut.title
-ORDER BY ut.dept_name DESC;
