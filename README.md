@@ -1,11 +1,14 @@
 # Pewlett Hackard Analysis 
 
 ## Overview of the Analysis
-The Silver Tsunami is a term used to describe the aging workforce in North America. This will have a significant effect on demogprahics resulting from thousands of baby boomers reaching retirement age every day. As baby boomers begin to retire at a rapid rate, companies will need to plan ahead to prepare for this phenomena. Pewlett Hackard is a large company employing thousands of employees, in addition the company has been around for a long time, thus will be heavily impacted by the Silver Tsunami. Pewlett Hackard plans to tackle Silver Tsunami by offering retirement package for eligible employees and determining which positions need to be filled in due to upcoming retirement causing thousands of job opening. Hence, the aim of this analysis is to determine the number of retiring employees based on their title as well as to determine eligible employees that can participate in a mentorship program in order to prepare Pewlett Hackard for the future.
+The Silver Tsunami is a term used to describe the aging workforce in North America. This will have a significant effect on demogprahics resulting from thousands of baby boomers reaching retirement age every day. As baby boomers begin to retire at a rapid rate, companies will need to plan ahead to prepare for this phenomena. Pewlett Hackard is a large company employing thousands of employees, in addition the company has been around for a long time, thus will be heavily impacted by the Silver Tsunami. Pewlett Hackard plans to tackle Silver Tsunami by offering retirement package for eligible employees and determining which positions need to be filled in due to upcoming retirement causing thousands of job opeining. Hence, the aim of this analysis is to determine the number of retiring employees based on their title as well as to determine eligible employees that can participate in a mentorship program in order to prepare Pewlett Hackard for the future.
 
 Multiple databases were used to generate the results for this analysis.Therefore, an entity relationship diagram (ERD) needed to be created to visualize the relationship and flow of information between databases as shown in the figure below. 
 
-                            ![ERD Snapshot](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png)
+<p align="center">  
+<img src="EmployeeDB.png" width="30%" height="30%">
+</p>
+<p align="center">  
 
 Lastly, the following information needed to be extracted for this analysis:
 - Retirement titles table for employees who are born between January 1, 1952 and December 31, 1955.
@@ -14,29 +17,49 @@ Lastly, the following information needed to be extracted for this analysis:
 
 ## Results
 1. Retirement Title Table 
-    - When the retirement table for employees who are born between January 1, 1952 and December 31, 1955 were first extracted, the query returned 133 776 rows. However, there are duplicate entries for some employees as a result of switching titles over the years. Therefore, the query needs to be refactored to account for this change. After refactoring, the query shows that there are 90,398 employees retiring in the next few years as illustrated in the figure below.
+When the retirement table for employees who are born between January 1, 1952 and December 31, 1955 were first extracted, the query returned 133 776 rows. However, there are duplicate entries for some employees as a result of switching titles over the years. Therefore, the query needs to be refactored to account for this change. After refactoring, the query shows that there are 90,398 employees retiring in the next few years as illustrated in the figure below.
 
-           ![Retirement Table Before Refactoring](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/retiring_titles_before_refactored.png)
-           ![Retirement Table After Refactoring](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/unique_titles.png)
+<p align="center">  
+<img src="Figures/retirement_titles_before_refactored.png" width="40%" height="40%">
+</p>
+<p align="center"> 
+
+
+<p align="center">  
+<img src="Figures/unique_titles.png" width="40%" height="40%">
+</p>
+<p align="center"> 
 
 2. Retiring Titles Table 
-    - The figure shows the list of employees based on their titles that will be retiring over the next few years. Senior Engineer had the highest count of employees retiring followed by Senior Staff, Engineer, Staff, Technique Leader, Assistant Engineer and Manager. 
+The figure shows the list of employees based on their titles that will be retiring over the next few years. Senior Engineer had the highest count of employees retiring followed by Senior Staff, Engineer, Staff, Technique Leader, Assistant Engineer and Manager. 
 
-            ![Retiring Titles Table](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/retiring_titles.png)
+<p align="center">  
+<img src="Figures/retiring_titles.png" width="25%" height="25%">
+</p>
+<p align="center"> 
+
 
 3. Mentorship Eligiblity Table
-    - There are 1,549 employees that are eligibile for mentorship as illustrade by the table below. 
-![Mentorship Eligibility](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/mentorship_eligibility.png)
+There are 1,549 employees that are eligibile for mentorship as illustrade by the table below. 
+<p align="center">  
+<img src="Figures/mentorship_eligibility.png" width="40%" height="40%">
+</p>
+<p align="center"> 
+
 
 ## Summary
 In this section further implications of Silver Tsunami on the company Pewlett Hackard will be discussed. The two questions in particular are:
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-
+Before answering the questions additional queries and table needed to be generated to provide more insight into the upcoming Silver Tsunami. Specifically, number of employees retiring and breakdown of departments were merged using inner join to create a table. This table were then used to generate further tables to answer the two questions. 
 1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-    - Before answering this question additional queries and tables needed to be generated to provide more insight into the upcoming Silver Tsunami. Specifically, number of employees retiring and breakdown of departments were merged using inner join to create a table. This table were then used to generate further table to answer this question. After running the query and summing the total, it shows that there are 90,398 roles that need to be filled as silver tsunami begins to make an impact which is the same number as the retirement title table. However, this table provides the breakdown of the the roles that need to be filled by department which is further subdivided by their title. 
+    - Before answering the questions additional queries and tables needed to be generated to provide more insight into the upcoming Silver Tsunami. Specifically, number of employees retiring and breakdown of departments were merged using inner join to create a table. This table were then used to generate further table to answer this question. After running the query and summing the total, it shows that there are 90,398 roles that need to be filled as silver tsunami begins to make an impact which is the same number as the retirement title table. However, this table provides the breakdown of the the roles that need to be filled by department which is further subdivided by their title. 
 
-                        ![Roles To Fill](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/roles_to_fill.png)
+<p align="center">  
+<img src="Figures/roles_to_fill.png" width="30%" height="30%">
+</p>
+<p align="center"> 
+
 
 2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
     - To answer this question, we can refer to the mentorship eligiblity table. Out of 90,398 employees retiring in the next few years,there are only 1,549 employees eligible for mentorship. In other words, there are only 1.7% retirement-ready employees in the department qualified to mentor the next generation of Pewlett Hackard employees. Depending on the needs of Pewlett Hackard, the company may need to invest in resources to make sure the next generation of Pewlett Hackard will be properly mentored. 
