@@ -3,7 +3,7 @@
 ## Overview of the Analysis
 The Silver Tsunami is a term used to describe the aging workforce in North America. This will have a significant effect on demogprahics resulting from thousands of baby boomers reaching retirement age every day. As baby boomers begin to retire at a rapid rate, companies will need to plan ahead to prepare for this phenomena. Pewlett Hackard is a large company employing thousands of employees, in addition the company has been around for a long time, thus will be heavily impacted by the Silver Tsunami. Pewlett Hackard plans to tackle Silver Tsunami by offering retirement package for eligible employees and determining which positions need to be filled in due to upcoming retirement causing thousands of job opeining. Hence, the aim of this analysis is to determine the number of retiring employees based on their title as well as to determine eligible employees that can participate in a mentorship program in order to prepare Pewlett Hackard for the future.
 
-Multiple databases were used to generate the results for this analysis.Therefore, an entity relationship diagram (ERD) needed to be created to visualize the relationship and flow of information between databases as shown in the figure below. 
+Multiple databases were used to generate the results for this analysis. Therefore, an entity relationship diagram (ERD) needed to be created to visualize the relationship and flow of information between databases as shown in the figure below. 
 
 <p align="center">  
 <img src="EmployeeDB.png" width="30%" height="30%">
