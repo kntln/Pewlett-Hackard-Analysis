@@ -20,13 +20,13 @@ Lastly, the following information needed to be extracted for this analysis:
 When the retirement table for employees who are born between January 1, 1952 and December 31, 1955 were first extracted, the query returned 133 776 rows. However, there are duplicate entries for some employees as a result of switching titles over the years. Therefore, the query needs to be refactored to account for this change. After refactoring, the query shows that there are 90,398 employees retiring in the next few years as illustrated in the figure below.
 
 <p align="center">  
-<img src="figures\retirement_titles_before_refactored.png" width="40%" height="40%">
+<img src="Pewlett-Hackard-Analysis/figures/retirement_titles_before_refactored.png" width="40%" height="40%">
 </p>
 <p align="center"> 
 
 
 <p align="center">  
-<img src="Figures\unique_titles.png" width="40%" height="40%">
+<img src="Pewlett-Hackard-Analysis/figures/unique_titles.png" width="40%" height="40%">
 </p>
 <p align="center"> 
 
@@ -34,7 +34,7 @@ When the retirement table for employees who are born between January 1, 1952 and
 The figure shows the list of employees based on their titles that will be retiring over the next few years. Senior Engineer had the highest count of employees retiring followed by Senior Staff, Engineer, Staff, Technique Leader, Assistant Engineer and Manager. 
 
 <p align="center">  
-<img src="Figures\retiring_titles.png" width="25%" height="25%">
+<img src="Pewlett-Hackard-Analysis/figures/retiring_titles.png" width="25%" height="25%">
 </p>
 <p align="center"> 
 
@@ -42,7 +42,7 @@ The figure shows the list of employees based on their titles that will be retiri
 3. Mentorship Eligiblity Table
 There are 1,549 employees that are eligibile for mentorship as illustrade by the table below. 
 <p align="center">  
-<img src="Figures\mentorship_eligibility.png" width="40%" height="40%">
+<img src="Pewlett-Hackard-Analysis/figures/mentorship_eligibility.png" width="40%" height="40%">
 </p>
 <p align="center"> 
 
@@ -56,7 +56,7 @@ Before answering the questions additional queries and table needed to be generat
     - Before answering the questions additional queries and tables needed to be generated to provide more insight into the upcoming Silver Tsunami. Specifically, number of employees retiring and breakdown of departments were merged using inner join to create a table. This table were then used to generate further table to answer this question. After running the query and summing the total, it shows that there are 90,398 roles that need to be filled as silver tsunami begins to make an impact which is the same number as the retirement title table. However, this table provides the breakdown of the the roles that need to be filled by department which is further subdivided by their title. 
 
 <p align="center">  
-<img src="Figures/roles_to_fill.png" width="30%" height="30%">
+<img src="Pewlett-Hackard-Analysis/figures/roles_to_fill.png" width="30%" height="30%">
 </p>
 <p align="center"> 
 
