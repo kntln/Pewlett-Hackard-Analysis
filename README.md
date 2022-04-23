@@ -17,18 +17,18 @@ Lastly, the following information needed to be extracted for this analysis:
 
 ## Results
 1. Retirement Title Table 
-When the retirement table for employees who are born between January 1, 1952 and December 31, 1955 were first extracted, the query returned 133 776 rows. However, there are duplicate entries for some employees as a result of switching titles over the years. Therefore, the query needs to be refactored to account for this change. After refactoring, the query shows that there are 90,398 employees retiring in the next few years as illustrated in the figure below.
+    - When the retirement table for employees who are born between January 1, 1952 and December 31, 1955 were first extracted, the query returned 133 776 rows. However, there are duplicate entries for some employees as a result of switching titles over the years. Therefore, the query needs to be refactored to account for this change. After refactoring, the query shows that there are 90,398 employees retiring in the next few years as illustrated in the figure below.
 
 ![Snapshot1](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/retiring_titles_before_refactored.png)
 ![Snapshot2](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/unique_titles.png)
 
 2. Retiring Titles Table 
-The figure shows the list of employees based on their titles that will be retiring over the next few years. Senior Engineer had the highest count of employees retiring followed by Senior Staff, Engineer, Staff, Technique Leader, Assistant Engineer and Manager. 
+    - The figure shows the list of employees based on their titles that will be retiring over the next few years. Senior Engineer had the highest count of employees retiring followed by Senior Staff, Engineer, Staff, Technique Leader, Assistant Engineer and Manager. 
 
 ![Snapshot3](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/retiring_titles.png)
     
 3. Mentorship Eligiblity Table
-There are 1,549 employees that are eligibile for mentorship as illustrade by the table below. 
+    - There are 1,549 employees that are eligibile for mentorship as illustrade by the table below. 
 ![Snapshot4](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/mentorship_eligibility.png)
 
 ## Summary
