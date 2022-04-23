@@ -20,7 +20,7 @@ Lastly, the following information needed to be extracted for this analysis:
 When the retirement table for employees who are born between January 1, 1952 and December 31, 1955 were first extracted, the query returned 133 776 rows. However, there are duplicate entries for some employees as a result of switching titles over the years. Therefore, the query needs to be refactored to account for this change. After refactoring, the query shows that there are 90,398 employees retiring in the next few years as illustrated in the figure below.
 
 <p align="center">  
-<img src="Pewlett-Hackard-Analysis/figures/retirement_titles_before_refactored.png" width="40%" height="40%">
+<img src="Pewlett-Hackard-Analysis/figures/retiring_titles_before_refactored.png" width="40%" height="40%">
 </p>
 <p align="center"> 
 
