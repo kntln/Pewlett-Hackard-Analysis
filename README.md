@@ -35,9 +35,9 @@ Lastly, the following information needed to be extracted for this analysis:
 In this section further implications of Silver Tsunami on the company Pewlett Hackard will be discussed. The two questions in particular are:
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-Before answering the questions additional queries and table needed to be generated to provide more insight into the upcoming Silver Tsunami. Specifically, number of employees retiring and breakdown of departments were merged using inner join to create a table. This table were then used to generate further tables to answer the two questions. 
+    
 1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-    - Before answering the questions additional queries and tables needed to be generated to provide more insight into the upcoming Silver Tsunami. Specifically, number of employees retiring and breakdown of departments were merged using inner join to create a table. This table were then used to generate further table to answer this question. After running the query and summing the total, it shows that there are 90,398 roles that need to be filled as silver tsunami begins to make an impact which is the same number as the retirement title table. However, this table provides the breakdown of the the roles that need to be filled by department which is further subdivided by their title. 
+    - Before answering the question additional queries and tables needed to be generated to provide more insight into the upcoming Silver Tsunami. Specifically, number of employees retiring and breakdown of departments were merged using inner join to create a table. This table were then used to generate further table to answer this question. After running the query and summing the total, it shows that there are 90,398 roles that need to be filled as silver tsunami begins to make an impact which is the same number as the retirement title table. However, this table provides the breakdown of the the roles that need to be filled by department which is further subdivided by their title. 
 
 ![Snapshot5](https://github.com/kntln/Pewlett-Hackard-Analysis/blob/main/figures/roles_to_fill.png)
 
